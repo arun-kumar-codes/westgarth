@@ -15,7 +15,6 @@ export function* getAccountInfoRequest(action) {
       ""
     );
     if (response) {
-        console.log(response,"hhh")
       yield put(actions.getAccountInfoSuccess(response.data));
     }
   } catch (e) {
